@@ -2,8 +2,9 @@ import requests
 from datetime import datetime
 import smtplib
 
-MY_EMAIL = "robotjonas123@gmail.com"
-MY_PASSWORD = "apfzogtsuajirtkn"
+# The email adress that will sent the mail
+MY_EMAIL = "YOUR EMAIL"
+MY_PASSWORD = "EMAIL PASSWORD"
 
 MY_LAT = -7.119496  # Your latitude
 MY_LONG = -34.845013  # Your longitude
@@ -50,4 +51,3 @@ if iss_is_above() and is_night():
                             from_addr=MY_EMAIL,
                             msg='SUBJECT: ISS IS ABOVE YOU\n\nHello, the ISS Satelite is above you, look up!')
 # Then email me to tell me to look up.
-# BONUS: run the code every 60 seconds.
